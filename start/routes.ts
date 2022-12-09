@@ -23,3 +23,19 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async () => {
   return { hello: 'world' }
 })
+
+Route.resource('pokemons', 'PokemonsController')
+  .apiOnly()
+  .where('id', /^[0-9]+$/)
+  .except(['destroy', 'update'])
+  .as('pokemons')
+  .middleware({ store: ['auth'] })
+
+Route.post('/pokemons/vote/:id', 'PokemonsController.update')
+  .where('id', /^[0-9]+$/)
+  .as('pokemons.vote')
+  .middleware(['auth'])
+
+Route.post('/signup', 'UsersController.signup').as('auth.signup')
+Route.post('signin', 'UsersController.signin').as('auth.signin')
+Route.post('/signout', 'UsersController.signout').as('auth.signout')

@@ -1,0 +1,61 @@
+/api/signup:
+  post:
+    tags:
+      - Auth
+    security: []
+    description: Sign up
+    parameters:
+      - name: credentials
+        in: body
+        required: true
+        schema:
+          properties:
+            email:
+              type: string.
+              example: 'example@example.com'
+              required: true
+            password:
+              type: string
+              example: 'secure-password'
+              required: true
+    produces:
+      - application/json
+    responses:
+      201:
+        description: User created
+/api/signin:
+  post:
+    tags:
+      - Auth
+    security: []
+    description: Sign in
+    parameters:
+      - name: credentials
+        in: body
+        required: true
+        schema:
+          properties:
+            email:
+              type: string.
+              example: 'example@example.com'
+              required: true
+            password:
+              type: string
+              example: 'secure-password'
+              required: true
+    produces:
+      - application/json
+    responses:
+      200:
+        description: Signed In
+/api/signout:
+  post:
+    tags:
+      - Auth
+    security: []
+    description: Sign out
+    produces:
+      - application/json
+    responses:
+      200:
+        description: Signed Out

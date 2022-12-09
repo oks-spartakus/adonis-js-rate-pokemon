@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Application with swagger docs",
+    "version": "1.0.0",
+    "description": "My application with swagger docs"
+  },
+  "paths": {
+    "/api/signup": {
+      "post": {
+        "tags": ["Auth"],
+        "security": [],
+        "description": "Sign up",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "201": { "description": "User created" } }
+      }
+    },
+    "/api/signin": {
+      "post": {
+        "tags": ["Auth"],
+        "security": [],
+        "description": "Sign in",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "200": { "description": "Signed In" } }
+      }
+    },
+    "/api/signout": {
+      "post": {
+        "tags": ["Auth"],
+        "security": [],
+        "description": "Sign out",
+        "produces": ["application/json"],
+        "responses": { "200": { "description": "Signed Out" } }
+      }
+    },
+    "/api/pokemons": {
+      "post": {
+        "tags": ["Pokemons"],
+        "security": [],
+        "description": "Sign up",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "201": { "description": "User created" } }
+      },
+      "get": {
+        "tags": ["Pokemons"],
+        "security": [],
+        "description": "Sign up",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "201": { "description": "User created" } }
+      }
+    },
+    "/api/pokemons/:id": {
+      "get": {
+        "tags": ["Pokemons"],
+        "security": [],
+        "description": "Sign up",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "201": { "description": "User created" } }
+      }
+    },
+    "/api/pokemons/vote/:id": {
+      "post": {
+        "tags": ["Pokemons"],
+        "security": [],
+        "description": "Sign up",
+        "parameters": [
+          {
+            "name": "credentials",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": { "type": "string.", "example": "example@example.com", "required": true },
+                "password": { "type": "string", "example": "secure-password", "required": true }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": { "201": { "description": "User created" } }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}
