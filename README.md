@@ -40,8 +40,6 @@ then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
 
 ## Comparison
 
-There are no tests written for this project.
-
 ### Basic Info
 
 - npm weekly downloads - 13,2k
