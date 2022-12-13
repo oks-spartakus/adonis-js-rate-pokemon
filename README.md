@@ -54,4 +54,6 @@ then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
 
 ### Pros
 
+- official plugins have commands to configure them - ```bash node ace configure @adonisjs/auth```
+
 ### Cons
