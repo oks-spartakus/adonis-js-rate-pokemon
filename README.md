@@ -37,3 +37,23 @@ $ npm run dev
 ```
 
 then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
+
+## Comparison
+
+There are no tests written for this project.
+
+### Basic Info
+
+- npm weekly downloads - 13,2k
+- last publish - 21 days ago
+- issues - 7
+- PRs - 2
+- last commit - 21 days ago
+- forks - 598
+- github stars - 13,3k
+- written in - Typescript
+- intended for - Typescript
+
+### Pros
+
+### Cons
