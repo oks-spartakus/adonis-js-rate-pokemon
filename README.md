@@ -51,9 +51,17 @@ then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
 - github stars - 13,3k
 - written in - Typescript
 - intended for - Typescript
+- best for - MVC, fullstack app, API
 
 ### Pros
 
-- official plugins have commands to configure them - ```bash node ace configure @adonisjs/auth```
+- ```bash npm ace``` CLI
+- CLI is asking you what are you going to work on BE or fullstack and generated projects are different regarding you answer
+- official plugins have commands to configure them - i.e. ```bash node ace configure @adonisjs/auth``` - this added needed code, creates folders and prints tips, if anything has to be added manually, in terminal or web browser (you can pick where to print tips while executing configure command)
+- tips during configuration, and during setting new project up too, are pointing exact file in which change has to be done, what change it is, what code and where it has to be placed (e.g. "paste this line of code in file file.ts in object obj")
+- routes have possibility to give them aliases
+- creating routes is super easy, especially the CRUD ones (resourceful routes), controllers are injected out of the box
+- super easy authorization - two commands - install, configure and it is ready to use
+- errors are being wrapped and customized - very good and easy to understand and find the cause of problem
 
 ### Cons
