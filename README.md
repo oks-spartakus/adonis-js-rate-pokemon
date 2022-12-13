@@ -55,9 +55,9 @@ then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
 
 ### Pros
 
-- ```bash npm ace``` CLI
+- ```npm ace``` CLI
 - CLI is asking you what are you going to work on BE or fullstack and generated projects are different regarding you answer
-- official plugins have commands to configure them - i.e. ```bash node ace configure @adonisjs/auth``` - this added needed code, creates folders and prints tips, if anything has to be added manually, in terminal or web browser (you can pick where to print tips while executing configure command)
+- official plugins have commands to configure them - i.e. ```node ace configure @adonisjs/auth``` - this added needed code, creates folders and prints tips, if anything has to be added manually, in terminal or web browser (you can pick where to print tips while executing configure command)
 - tips during configuration, and during setting new project up too, are pointing exact file in which change has to be done, what change it is, what code and where it has to be placed (e.g. "paste this line of code in file file.ts in object obj")
 - routes have possibility to give them aliases
 - creating routes is super easy, especially the CRUD ones (resourceful routes), controllers are injected out of the box
@@ -65,3 +65,7 @@ then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
 - errors are being wrapped and customized - very good and easy to understand and find the cause of problem
 
 ### Cons
+
+- controllers are passed to routes as strings - ```Route.post('/signup', 'UsersController.signup').as('auth.signup')```
+- swagger has to be created manually
+- in some places FE related files are being generated even when choosing to develop API
