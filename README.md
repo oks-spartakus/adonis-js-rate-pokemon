@@ -1,0 +1,39 @@
+<p align="center">
+  <a href="https://adonisjs.com/" target="blank"><img src="https://avatars.githubusercontent.com/u/13810373?s=200&v=4" width="200" alt="Adonis Logo" /></a>
+  <a href="." target="blank"><img src="https://seeklogo.com/images/P/pokeball-logo-DC23868CA1-seeklogo.com.png" width="200" alt="Pokeball" /></a>
+</p>
+
+  <p align="center">Voting for you favorite Pokemon.Written in <a href="https://github.com/adonisjs" target="_blank">AdonisJs</a> - a fully featured web framework for <a href="http://nodejs.org" target="_blank">Node.js</a>.</p>
+    <p align="center">
+</p>
+
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run dev
+#or
+$ node ace serve --watch
+
+```
+
+## Test
+
+There are no tests written for this project.
+
+## API Documentation
+
+### Swagger
+
+```bash
+# development
+$ npm run dev
+```
+
+then go to [http://127.0.0.1:3333/docs](http://127.0.0.1:3333/docs)
